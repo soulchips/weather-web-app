@@ -15,8 +15,10 @@ const forecast = (longitude, latitude, location, callback) => {
     } else {
       const temp = body.currently.temperature
       const rainChance = body.currently.precipProbability
+      const summary = body.currently.summary
+      console.log(body.currently)
 
-      callback(undefined, `It is currently ${temp} degress out in ${location}. There is ${rainChance} percent chance of rain`)
+      callback(undefined, `It is currently ${summary} and ${temp} \xB0F in ${location}. There is a ${rainChance}% chance of rain`)
 
     }
   })
