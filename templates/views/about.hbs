@@ -2,13 +2,17 @@
 
 <html>
   <head>
-    <link rel="stylesheet" href="/css/styles.css">
+    <title>About</title>
+    {{>head_source}}
   </head>
 
 <body>
-  {{>header}}
-  <img src="/img/firesuit.jpg" alt="firesuit">
-  <p>{{name}}</p>
+  <div class="main-content">
+    {{>header}}
+
+    <img class="portrait" src="/img/firesuit.jpg" alt="firesuit">
+    <p>{{name}}</p>
+  </div>
 
   {{>footer}}
 </body>
